@@ -1,5 +1,7 @@
 class ReservationsController < ApplicationController
   def api
-    binding.pry
+    params.permit!
+
+    head :ok
   end
 end
